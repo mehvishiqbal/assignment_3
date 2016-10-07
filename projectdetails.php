@@ -1,3 +1,14 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Project details</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+
 <?php 
 
 // validating and storing id as variable for later (project id)
@@ -16,16 +27,18 @@ $stmt->bind_result($pname, $pdesc, $pstart, $pend, $ptail);
 
 while ($stmt->fetch()) {
 	echo '<h1>'.$pname.'</h1>';
-	echo '<p>'.$desc.'</p>';
+	echo '<p>'.$pdesc.'</p>';
 	echo '<p>'.$ptail.'</p>';
 	echo '<p>'.$pstart.'-'.$pend.'</p>';
 	
 }
 ?>
 
+
+
 <hr>
 
-<h2>Resources</h2>
+<h2>Resources:</h2>
 <ul>
 <?php
 require_once 'database.php';
@@ -44,13 +57,18 @@ $stmt->bind_result($rrid, $rname, $typename);
 
 while($stmt->fetch()) {
 	echo '
-	<h3>Name</h3>
+	<h3>Name:</h3>
 	<li>'.$rname.'</li>
-	<h3>Type</h3>
+	<h3>Type:</h3>
 		<li>'.$typename.'</li>';
 }
 ?>
 
-<hr>	
+</ul>
+<hr>
+<a class="backlink" href="index.php">Back to Clientlist</a><br>
 
-<a href="index.php">Back to Clientlist</a><br>
+
+
+</body>
+</html>

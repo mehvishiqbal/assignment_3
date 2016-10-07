@@ -2,7 +2,8 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Untitled Document</title>
+<title>UInserting clients</title>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>

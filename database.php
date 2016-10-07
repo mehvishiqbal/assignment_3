@@ -1,8 +1,8 @@
 <?php
 const DB_HOST = 'localhost';
-const DB_USER = 'root';
-const DB_PASS = 'root';
-const DB_NAME = 'web_developers';
+const DB_USER = 'test';
+const DB_PASS = '123';
+const DB_NAME = 'test';
 
 $link = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 if ($link->connect_error) { 

@@ -1,3 +1,13 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Project details</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
 <?php
 
 $cname = filter_input(INPUT_POST, 'cname', FILTER_SANITIZE_STRING) or die('Missing/illegal parameter');
@@ -32,3 +42,7 @@ else {
 }
 ?>
 <hr>
+
+
+</body>
+</html>
