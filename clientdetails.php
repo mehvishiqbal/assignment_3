@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Client Details</title>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 
 <body>
@@ -28,7 +29,7 @@ Phone: <?=$cphone?><br>
 Zip Code: <?=$czip?><br>
 </p>
 
-<h2>Projects</h2>
+<h2>Projects:</h2>
 <ul>
 <?php
 require_once 'database.php';
@@ -55,7 +56,7 @@ while($stmt->fetch()) {
 
 <a href="index.php">Back to Clientlist</a><br>
 
-<h2>Update Client</h2>
+<h2>Update Client:</h2>
 
 <form action="updateclient.php" method="post">
 	<input type="text" name="cname" value="" placeholder="Name"><br>
